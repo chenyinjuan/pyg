@@ -1,0 +1,22 @@
+<style lang="less">
+// 样式
+view {
+  background: #f99;
+}
+</style>
+<template>
+  <view class="container">Hello world</view>
+</template>
+
+<script>
+import wepy from 'wepy'
+
+export default class Index extends wepy.page {
+  config = {
+    navigationBarTitleText: '测试wpy'
+  };
+  onLoad() {
+    console.log('onLoad')
+  }
+}
+</script>

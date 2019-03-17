@@ -1,0 +1,15 @@
+{
+	"description": "A WePY project",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"appid": "wxe4e27a12ec324ad3",
+	"projectname": "pyg",
+	"miniprogramRoot": "dist/",
+	"condition": {}
+}

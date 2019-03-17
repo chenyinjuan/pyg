@@ -1,0 +1,23 @@
+<style lang="less">
+</style>
+
+<script>
+import wepy from 'wepy'
+
+export default class extends wepy.app {
+  // 配置文件
+  config = {
+    pages: ['pages/index', 'pages/my'],
+    window: {
+      backgroundTextStyle: 'light',
+      navigationBarBackgroundColor: '#fff',
+      navigationBarTitleText: 'wepy框架',
+      navigationBarTextStyle: 'black'
+    }
+  };
+
+  onLaunch() {
+    console.log('on launch123')
+  }
+}
+</script>
