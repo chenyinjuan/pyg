@@ -1,18 +1,46 @@
 <style lang="less">
 </style>
-
 <script>
 import wepy from 'wepy'
 
 export default class extends wepy.app {
   // 配置文件
   config = {
-    pages: ['pages/index', 'pages/my'],
+    pages: ['pages/index', 'pages/my', 'pages/category', 'pages/cart'],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
+      navigationBarBackgroundColor: 'ff2d4a',
       navigationBarTitleText: 'wepy框架',
-      navigationBarTextStyle: 'black'
+      navigationBarTextStyle: 'black',
+      selectedColor: 'ff2d4a'
+    },
+    tabBar: {
+      list: [
+        {
+          pagePath: 'pages/index',
+          text: '首页',
+          iconPath: '../dist/assets/images/icon_home@3x.png',
+          selectedIconPath: '../dist/assets/images/icon_home_active@3x.png'
+        },
+        {
+          pagePath: 'pages/category',
+          text: '分类',
+          iconPath: '../dist/assets/images/icon_category@3x.png',
+          selectedIconPath: '../dist/assets/images/icon_category_active@3x.png'
+        },
+        {
+          pagePath: 'pages/cart',
+          text: '购物车',
+          iconPath: '../dist/assets/images/icon_cart@3x.png',
+          selectedIconPath: '../dist/assets/images/icon_cart_active@3x.png'
+        },
+        {
+          pagePath: 'pages/my',
+          text: '我的',
+          iconPath: '../dist/assets/images/icon_me@3x.png',
+          selectedIconPath: '../dist/assets/images/icon_me_active@3x.png'
+        }
+      ]
     }
   };
 

@@ -7,7 +7,7 @@
 <script>
 import wepy from 'wepy'
 
-export default class my extends wepy.page {
+export default class Category extends wepy.page {
   config = {
     navigationBarTitleText: '测试wpy'
   };
